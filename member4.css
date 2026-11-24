@@ -1,0 +1,27 @@
+/* Member four portfolio additions, matching the member portfolio layout */
+.profile-head.container { padding: 85px 24px 40px; }
+.profile-intro, .biography { max-width: 820px; }
+.biography { margin-left: auto; margin-right: auto; }
+.introduction { display: grid; grid-template-columns: minmax(160px, 240px) minmax(0, 1fr); gap: 32px; align-items: center; }
+.project figure { margin: 0; min-width: 0; }
+.project img, .project video { display: block; width: 100%; height: auto; border-radius: 10px; }
+.project figcaption { color: var(--muted); font-size: .875rem; margin-top: 12px; }
+.project p { font-size: 1rem; }
+.project h3 { font-size: 1.65rem; margin: 10px 0; }
+.introduction .button.secondary { margin-left: 0; }
+.graphic-project { margin-top: 26px; }
+.project-subtitle { margin: 0 0 26px; }
+.design-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+.design-description p:first-child { margin-top: 0; }
+.source-download { display: inline-block; margin-top: 28px; text-decoration: underline; text-underline-offset: 4px; }
+.project:hover { transform: none; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+@media (max-width: 760px) {
+    .design-layout { grid-template-columns: 1fr; }
+    .introduction { grid-template-columns: 1fr; }
+    .introduction figure { max-width: 100%; }
+}
+@media (max-width: 600px) {
+    .profile-head.container { padding: 60px 24px 30px; }
+    .project { padding: 20px; }
+}
